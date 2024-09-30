@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="icon" href="./img/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+    <!-- Container Box -->  
+    <div id="container">
+        <form id="form-box" onsubmit="registerUser(event)">
+            <h1>Sign up</h1>
+            <div class="input-text">
+                <input type="text" id="name" name="name" placeholder="Enter your name" required class="box">
+                <input type="email" id="email" name="email" placeholder="Enter your email" required class="box">
+                <input type="password" id="password" name="password" placeholder="Enter your password" required class="box">
+                <input type="password" id="cpassword" name="cpassword" placeholder="Confirm your password" required class="box"><br>
+                <div id="button-login">
+                    <input type="submit" id="add-user" name="add" value="Sign up">
+                </div>
+            </div>
+            <!-- Sign in link -->
+            <div class="register-link">
+                <p>Already have an account? <a href="login.html">Sign in</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- External Script -->
+    <script src="js/script.js"></script>
+</body>
+</html>

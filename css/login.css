@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    background-color: #212121;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    background-color: white;
+    border-radius: 20px;
+    width: 450px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#form-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-text {
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-text input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+/* Added styles for Remember Me and Forgot Password */
+.options {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.remember-me {
+    display: flex;
+    color: #212121;
+    font-size: 0.9rem;
+    align-items: center;
+    justify-content: start;
+    cursor: pointer;
+    gap: 5px; 
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 10px;
+}
+
+.forgot-password {
+    font-size: 0.9rem;
+    padding-right: 10px;
+}
+
+.forgot-password a {
+    color: #311b92;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+#button-submit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#button-login #add-user {
+    width: calc(150% - 20px);
+    padding: 10px;
+    background-color: #212121;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#button-login #add-user:hover {
+    background-color: #212121;
+    opacity: 0.8;
+}
+
+/* Style for the Sign in link */
+.login-link {
+    margin-top: 20px;
+    font-size: 0.8rem;
+}
+
+.login-link a {
+    color: #311b92;
+    text-decoration: none;
+    /*font-size: 0.9rem;*/
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Style for the sign up link */
+.register-link {
+    margin-top: 20px;
+    font-size: 0.8rem;
+}
+
+.register-link a {  
+    color: #311b92;
+    text-decoration: none;
+    /*font-size: 0.9rem;*/
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
