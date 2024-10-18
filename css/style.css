@@ -13,21 +13,30 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
+    background: url('../img/background.jpg') no-repeat center center fixed;
+    filter: blur(0.5px);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 header {
     width: 100%;
-    height: 5%;
+    height: 7%;
     position: fixed;
     top: 0;
     right: 0;
-    background-color: #333;
+    background-color: #eceff1;
     padding: 10px 0;
     z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.10);
 }
 
 .header-content {
     max-width: 1200px;
+    height: 20px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -35,20 +44,37 @@ header {
     padding: 0 20px;
 }
 
+.icon {
+    border-radius: 50px;
+}
+
 .logo img {
-    width: 150px;
+    width: 60px;
+    height: 35px;
     align-items: start;
+    padding-top: 10px;
+    margin-top: 20px;
+    height: 20%;
+    border-radius: 8px;
 }
 
 .header-nav {
     display: flex;
     justify-content: flex-end;
+    align-items: end;
+    margin-left: 20px;
+
 }
 
 .header-nav ul {
+    text-align: center;
+    align-items: center;
+    padding-top: 5px;
     list-style-type: none;
     display: flex;
-    margin-left: 20px;
+    font-weight: 600;
+    font-size: Bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .header-nav ul li {
@@ -56,44 +82,86 @@ header {
 }
 
 .header-nav ul li a {
-    color: white;
+    color: #212121;;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 10px;
     transition: background-color 0.3s ease;
 }
 
 .header-nav ul li a:hover {
-    background-color: #575757;
+    opacity: 0.8;
+    color: #212121;
     border-radius: 5px;
 }
 
 .member-action {
-    display: flex;
-    padding-right: 20px;
-}
-.member-action ul {
-    list-style-type: none;
-    display: flex;
+    margin-top: 10px;
+    margin-left: 30px;
+
 }
 
-.member-action ul li {
-    margin: 0 10px;
-}
-
-.member-action ul li a {
-    background-color: #ff6b6b;
-    color: white;
-    padding: 8px 16px;
+/* Login button*/
+.btn-login {
+    height: 40px;
+    width: 100px;
+    background-color: #20331a;
+    color: #eceff1;
+    padding: 10px;
     text-decoration: none;
     border-radius: 5px;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.member-action ul li a:hover {
-    background-color: #ff4c4c;
+.btn-login:hover {
+    opacity: 0.8;
 }
 
+.btn-register {
+    height: 40px;
+    width: 100px;
+    background-color: #20331a;
+    color: #eceff1;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-register:hover {
+    opacity: 0.8;
+}
+
+
+/* H1 */
 .container {
-    margin-top: 100px;
-    padding: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container h1 {
+    text-align: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.container p {
+    padding: 10px 0;
+    padding-top: 20px;
+    text-align: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: semi-bold;
+    font-size: 20px;
 }

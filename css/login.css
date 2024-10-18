@@ -1,8 +1,12 @@
 body {
     margin: 0;
-    background-color: #212121;
+    background: url('../img/background2.jpg') no-repeat center center fixed;
+    filter: blur(0.5px);
+    -webkit-filter: blur(0.5px); 
+    background-size: cover;
+    background-position: center;
     position: relative;
-    display: flex;
+    display: flex;  
     justify-content: center;
     height: 100vh;
     font-family: Arial, sans-serif;

@@ -14,7 +14,7 @@ function login(event) {
     }
 }
 
-/** Register function */
+// Register function 
 function registerUser(event) {
     event.preventDefault(); // Prevent form submission
 
@@ -47,7 +47,7 @@ function registerUser(event) {
     window.location.href = 'login.html';
 }
 
-// Function to check for existing users (optional)
+// Function to check for existing users
 function checkExistingUser(email) {
     const users = JSON.parse(localStorage.getItem('users')) || [];
     return users.some(user => user.email === email);
